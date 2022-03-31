@@ -1,3 +1,20 @@
 <div class="container">
-  <p class="alert alert-success">Home Page</p>
+  <input type="text" name="name" [(ngModel)]="name" class="col-12">
+  <p class="alert alert-success"> {{name}} </p>
+
+  <div class="caption">
+    <h4>Thông Tin Sinh Viên</h4>
+    <img src="https://avatars.githubusercontent.com/u/48083044?v=4" alt="">
+  </div>
+  <ul>
+    <li>Họ tên: {{student.name}}</li>
+    <li>Tuổi: {{student.age}}</li>
+    <li>Địa chỉ: {{student.address}}</li>
+    <li>SĐT: {{student.phone}}</li>
+  </ul>
+  <ul>
+    <li>{{product.name}}</li>
+    <li>{{product.price}}</li>
+    <li>{{product.quantity}}</li>
+  </ul>
 </div>
